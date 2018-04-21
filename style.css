@@ -1,0 +1,64 @@
+body{
+    height: 1000px;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 20px;
+    background-color: grey;
+    position: fixed;
+}
+.user-info{
+    padding-top: 30px;
+}
+.user-info .left{
+    float: left;
+    margin-left: 20px;
+}
+img.user-icon{
+    width: 200px;
+    height: 200px;
+}
+.user-name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.user-info .right{
+    height: 200px;
+    padding-left: 250px;
+}
+.tabs{
+    float: right;
+    height: 30px;
+}
+.tab{
+    display: inline-block;
+    width: 100px;
+    line-height: 18px;
+    margin: 0 10px 0;
+    padding: 5px 5px 5px 20px;
+    border: solid 1px black;
+    border-bottom: none;
+    background: gray;
+}
+.tab.selected{
+    line-height: 20px;
+    background-color: white;
+}
+.posts{
+    clear: both;
+    margin-top: 0;
+    padding: 7px;
+    border-top: solid 1px black;
+}
+img.post-image{
+    margin: 5px;
+    width: 250px;
+    border-radius: 10px;
+}
+.float-button{
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+}
