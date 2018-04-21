@@ -15,6 +15,11 @@ body{
     float: left;
     margin-left: 20px;
 }
+.user-info::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 img.user-icon{
     width: 200px;
     height: 200px;
