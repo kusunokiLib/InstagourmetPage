@@ -5,49 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <a href='#'>Instagourmet</a>
-        <img class="header-icon" src='sample.jpg' alt='インスタグルメのアイコン'>
+      <i class="fas fa-utensils"></i>
+        <h1><a href='#'>Instagourmet</a></h1>
     </header>
     
-    <div class="user-info">
-        <div class="left">
-            <img class="user-icon" src='sample.jpg' alt='ユーザのアイコン'>
-            <p class="user-name">ユーザ名</p>
-        </div>
-        <div class="right">
-            <a href='#'>フォロー</a>
-            <a href='#'>フォロワー</a>
-            <a href='#'>編集</a>
-            <p>
-                ああああああああああああああああああああ<br>
-                あああああああああああああああああああ<br>
-                あああ<br>
-                あ
-            </p>
-        </div>        
-    </div>
-
-    <div class="contents">
-      <div class="tabs">
-          <p class="tab selected">投稿</p>
-          <p class="tab">食べたい</p>
+    <div class='main-wrapper'>
+      <div class="user-info">
+          <div class="left">
+              <img class="user-icon" src='sample.jpg' alt='ユーザのアイコン'>
+              <p class="user-name">User_Name</p>
+          </div>
+          <div class="right">
+              <a href='#' class='button'>フォロー <b>200</b></a>
+              <a href='#' class='button'>フォロワー <b>400</b></a>
+              <a href='#' class='button'>編集</a>
+              <p>
+                  ああああああああああああああああああああ
+                  あああああああああああああああああああ
+                  あああ
+                  あ
+              </p>
+          </div>        
       </div>
-      <div class="posts">
-          <img class="post-image" src='sample.jpg' alt='投稿画像'>
-          <img class="post-image" src='sample.jpg' alt='投稿画像'>
-          <img class="post-image" src='sample.jpg' alt='投稿画像'>
-          <img class="post-image" src='sample.jpg' alt='投稿画像'>
-          <img class="post-image" src='sample.jpg' alt='投稿画像'>
-          <img class="post-image" src='sample.jpg' alt='投稿画像'>
+
+      <div class="contents">
+        <div class="tabs">
+            <p class="tab selected">投稿</p>
+            <p class="tab">食べたい</p>
+        </div>
+        <div class="posts">
+            <img class="post-image" src='sample.jpg' alt='投稿画像'>
+            <img class="post-image" src='sample.jpg' alt='投稿画像'>
+            <img class="post-image" src='sample.jpg' alt='投稿画像'>
+            <img class="post-image" src='sample.jpg' alt='投稿画像'>
+            <img class="post-image" src='sample.jpg' alt='投稿画像'>
+            <img class="post-image" src='sample.jpg' alt='投稿画像'>
+        </div>
       </div>
     </div>
     <div class="float-button">
-        <a href='#'><img src="sample.jpg" alt="検索ボタン"></a>
-        <a href='#'><img src="sample.jpg" alt="投稿ボタン"></a>
+        <a href='#' class="button-circle"><i class="fas fa-search fa-2x"></i></a>
+        <a href='#' class="button-circle"><i class="fas fa-plus-circle fa-2x"></i></a>
     </div>
 </body>
 </html>
