@@ -1,15 +1,36 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
 body{
-    height: 1000px;
     margin: 0;
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    border-collapse: collapse;
+}
+a{
+  text-decoration: none;
+}
+a,a:visited{
+  color: black;
 }
 .header{
     width: 100%;
-    height: 20px;
+    height: 50px;
+    padding: 10px 40px;
     background-color: white;
     position: fixed;
     z-index: 1;
     box-shadow: 0 0 3px black;
+}
+.header h1{
+  display: inline;
+  font-family: 'Gaegu', cursive;
+  font-size: 1.7rem;
+}
+.header:after{
+  clear: both;
+  content: "";
+  display: block;
 }
 .header-icon{
     position: absolute;
@@ -21,8 +42,12 @@ body{
     height: 90%;
     vertical-align: middle;
 }
+.main-wrapper{
+  width: 750px;
+  margin: 0 auto;
+}
 .user-info{
-    padding-top: 30px;
+    padding-top: 80px;
 }
 .user-info .left{
     float: left;
@@ -42,11 +67,24 @@ img.user-icon{
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
+    font-family: 'Gaegu', cursive;
+    font-size: 1.2rem;
 }
 .user-info .right{
     height: 200px;
+    padding-top: 30px;
     padding-left: 250px;
 }
+.button{
+  padding: 5px 10px;
+  opacity: 0.5;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.button:hover{
+  opacity: 1;
+}
+
 .contents{
   position: relative;
 }
@@ -86,8 +124,10 @@ img.user-icon{
     border-bottom: 31px solid white;
 }
 .posts{
-    margin-top: 0;
-    padding: 7px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
     border-top: solid 1px gray;
     background-color: white;
 }
@@ -98,12 +138,26 @@ img.post-image{
 }
 .float-button{
     position: fixed;
-    right: 30px;
-    bottom: 10px;
+    right: 60px;
+    bottom: 20px;
 }
-.float-button a img{
-    width: 65px;
-    height: 65px;
-    margin-left: 12px;
-    border-radius: 50%;
+.button-circle{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  opacity: 0.7;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.button-circle:hover{
+  opacity: 1;
+}
+.button-circle i{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: black;
 }
