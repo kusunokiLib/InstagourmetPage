@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.form-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form label{
+    display: inline-block;
+    width: 20%;
+}
+
