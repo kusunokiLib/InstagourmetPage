@@ -23,6 +23,7 @@ body{
     height: 340px;
     background-color: white;
     border-radius: 50%;
+    margin: 0 100px;
 
     box-shadow:
         5px 5px 25px 0px #0003 inset,
